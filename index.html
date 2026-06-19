@@ -58,6 +58,14 @@ body {
 
 .brand-name { font-family: 'Bricolage Grotesque', sans-serif; font-size: 19px; font-weight: 500; letter-spacing: -0.01em; }
 .brand-wordmark { height: 16px; width: auto; display: block; }
+.maker { margin-top: 44px; display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
+.maker-by { font-size: 12.5px; color: var(--ink3); letter-spacing: -0.01em; }
+.maker-by strong { color: var(--ink2); font-weight: 600; }
+.maker-heart { font-style: normal; font-size: 11px; }
+.maker-links { display: flex; gap: 4px; align-items: center; }
+.maker-pill { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 8px; color: var(--ink3); text-decoration: none; transition: all 0.16s ease; font-size: 0; }
+.maker-pill svg { width: 15px; height: 15px; stroke: currentColor; stroke-width: 2; fill: none; }
+.maker-pill:hover { color: var(--ink); background: var(--bg-tint); }
 .pips { display: flex; align-items: center; gap: 5px; }
 .pip { width: 6px; height: 6px; border-radius: 50%; background: var(--line2); transition: all 0.35s cubic-bezier(.4,0,.2,1); }
 .pip.on { background: var(--ink); width: 20px; border-radius: 4px; }
@@ -410,6 +418,18 @@ body {
   </div>
 
   <button class="cta au d6" id="s1btn" onclick="goTo('s2')">Continue<svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+
+  <div class="maker au d6">
+    <div class="maker-by">Made with <span class="maker-heart">❤️</span> by <strong>Darshil Gohel</strong></div>
+    <div class="maker-links">
+      <a class="maker-pill" href="https://instagram.com/darshilgohel14" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>darshilgohel14</a>
+      <a class="maker-pill" href="https://linkedin.com/in/darshilgohel14" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>darshilgohel14</a>
+      <a class="maker-pill" href="https://x.com/darshilgohel4" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" stroke="none" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>darshilgohel4</a>
+    </div>
+  </div>
 </div>
 
 <!-- ════ S2 ════ -->
